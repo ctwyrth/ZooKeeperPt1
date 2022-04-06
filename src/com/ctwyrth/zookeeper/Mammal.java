@@ -2,9 +2,11 @@ package com.ctwyrth.zookeeper;
 
 public class Mammal {
 	// MEMBER VARIABLES
-	private int energyLevel;
+	private int energyLevel = 50;
 	
 	// CONSTRUCTORS
+	public Mammal() {}
+	
 	public Mammal(int energy) {
 		energyLevel = energy;
 	}
@@ -19,7 +21,7 @@ public class Mammal {
 	}
 	
 	public int displayEnergy() {
-		System.out.printf("This mammal's energy level is %d.", this.getEnergyLevel());
+		System.out.printf("This mammal's energy level is %d.\n", this.getEnergyLevel());
 		return this.getEnergyLevel();
 	}
 }
